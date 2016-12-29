@@ -1,0 +1,35 @@
+<!doctype html>
+<!--主頁面-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="js/mainjs.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<script  src="js/bootstrap.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<title>ANLE管理</title>
+</head>
+<body>
+	<form action="issued.php" method="post">
+		<div style="text-align:left;width:100%;height:100%;margin:0 auto;">
+			<div style="text-align:center;width:300px;height:20%;margin:0 auto;">
+				<h1>發文篩選條件</h1><br>
+				<input type="checkbox" name="allcheck"><label>全部選取</label><br>
+				<input type="checkbox" name="notpay"><label>年度未繳費</label><br>
+				<label>墓基編號：</label><input type="text" name="base_idA" size="4">區<input type="text" name="base_idB" size="3">號之<input type="text" name="base_idC" size="3"><br>
+				<label>宗教：</label><input type="checkbox" name="Taoism">道教<input type="checkbox" name="Buddhism">佛教<input type="checkbox" name="Christian">基督教<input type="checkbox" name="Catholicism">天主教<input type="checkbox" name="other">其他<br>
+				<label>訊息內容</label>
+			</div>
+			<div style="width:600px;height:80%;margin:0 auto;text-align:left;">
+				<textarea name="IN" rows="30" cols="84"></textarea><br/><br/>
+				<a href="index.html" class="btn btn-primary" role="button">回前頁</a>
+				<button type="submit" class="btn btn-success">送出</button>
+			</div>	
+		</div>
+	</form>
+</body>
+</html>
